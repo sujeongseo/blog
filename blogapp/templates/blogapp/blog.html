@@ -1,0 +1,14 @@
+<h1>My Simple Blog</h1>
+
+<!-- 블로그 글들의 목록을 보여줄 예정 -->
+{% for post in posts %}
+    <a href="{% url 'detail' post.id %}"> <h3> 제목 : {{ post.title }} </h3> </a> 
+    <h4> 작성날짜 : {{ post.date }} </h4>
+{% endfor %}
+<br><br><br>
+<!-- <a href="{% url 'new' %}">HTML을 이용한 새 글 작성</a><br/>
+
+<a href="{% url 'formcreate' %}">Django form을 이용한 새 글 작성</a><br/> -->
+
+<a href="{% url 'modelformcreate' %}">model form을 이용한 새 글 작성</a>
+

@@ -1,0 +1,255 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  /* padding: 20px; */
+  /* border: 1px solid #888; */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 24px 48px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  width: 360px; /* Could be more or less, depending on screen size */
+  height: 330px;
+  left: 22px;
+  top: 30px;
+  }
+  .modal-number {
+  position: absolute;
+  width: 70%;
+  height: 42px;
+  /* top: 15px; */
+  left: 15%;
+  text-align: center;
+  color: rgba(253, 118, 62, 1);
+  font-weight: bold;
+  }
+  
+  .modal-copy {
+  position: absolute;
+  width: 70%;
+  height: 42px;
+  /* top: 40px; */
+  left: 15%;
+  text-align: center;
+  color: rgba(253, 118, 62, 1);
+  font-size: large;
+  font-weight: bold;
+  
+  }
+  
+  .modal-image {
+  position: relative !important;
+  width: 100%;
+  /* height: 100% */
+  left: 0px;
+  top: 35px;
+  text-align: center;
+  margin: auto;
+  }
+  
+  
+  
+  .modal-description {
+  position: absolute;
+  width: 80%;
+  height: 36px;
+  left: 10%;
+  top: 40%;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 140%;
+  /* or 18px */
+  text-align: center;
+  color: #000000;
+  }
+  
+  
+  /* The Close Button */
+  .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  
+  
+  
+  /* Slideshow container */
+  .slideshow-container {
+  max-width: 1000px;
+  /* width: 100%;
+  height: 100%; */
+  position: relative;
+  margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+  display: none;
+  }
+  
+  /* Next & previous buttons */
+  .slide-button {
+  /* top: 100px; */
+  /* margin-top: 250px; */
+  }
+  
+  .prev, .next {
+  color: #E5E5E5;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 1;
+  font-size: xx-large;
+  text-decoration: none;
+  }
+
+  #modal-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+#modal-slide-area {
+  width: 100%;
+  height: 100%;
+}
+
+  /* Position the "next button" to the right */
+  .next {
+  /* right: 0; */
+  border-radius: 3px 0 0 3px;
+  margin-right: 10px;
+  }
+  
+  .prev {
+  /* left : 0px; */
+  border-radius: 3px 0 0 3px;
+  margin-left: 10px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  top:200px;
+  }
+  
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+  /* -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; */
+  }
+  
+  @-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+  
+  @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+  
+  .left-date {
+  width: 122px;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 127px;
+  font-weight: ExtraBold;
+  font-size: 44px;
+  opacity: 1;
+  text-align: center;
+  }
+  .result {
+  width: 120px;
+  color:white;
+  position: absolute;
+  top: 40px;
+  left: 128px;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+  }
+  
+  .heading {
+  text-align: center;
+  position: relative;
+  }
+  
+  .back {
+  position: absolute;
+  }
+  
+  .front {
+  position: absolute;
+  }
+  .space {
+  width: 100%;
+  height: 30px;
+  top: 100px;
+  margin: 100px 0;
+  background-color: black;
+  text-align: center;
+  }
